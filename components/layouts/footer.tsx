@@ -11,7 +11,7 @@ export function Footer() {
   return (
     <footer className="container space-y-4 pb-16 text-sm text-slate-500">
       <div className="flex items-center justify-center">
-        <p>
+        {/* <p>
           Coded in{' '}
           <Link
             href="https://code.visualstudio.com/"
@@ -66,19 +66,10 @@ export function Footer() {
           >
             VidSrc
           </Link>
-          .{/* ,{' '} */}
-          {/* <Link
-            href="https://mywebb-mustafaarslankaya.vercel.app"
-            className="font-medium text-slate-300/75"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Arslankaya &#10084;
-          </Link> */}
-        </p>
+        </p> */}
       </div>
       <div className="flex items-center justify-center">
-        <Link
+        {/* <Link
           target="_blank"
           rel="noreferrer"
           href={siteConfig.links.buyMeACoffee}
@@ -86,7 +77,7 @@ export function Footer() {
         >
           <Icons.buyMeACoffee className="mr-2 size-5" />
           Buy me a coffee
-        </Link>
+        </Link> */}
       </div>
     </footer>
   )

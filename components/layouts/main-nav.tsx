@@ -19,7 +19,7 @@ export function MainNav({ items }: MainNavProps) {
       <Link href="/" className="flex items-baseline space-x-2">
         <Icons.reelLogo className="size-7" />
         <span className="inline-block text-3xl font-bold text-secondary-foreground">
-          {siteConfig.name}
+          {/* {siteConfig.name} */}
         </span>
       </Link>
       {items?.length ? (
