@@ -4,7 +4,7 @@ import { SkeletonContainer } from '@/components/ui/skeleton'
 
 export const MovieTVListLoader = () => {
   return (
-    <div className="container h-full py-20 lg:py-36">
+    <div className="container h-full py-20 lg:py-20">
       <div className="grid grid-cols-2 gap-4 lg:grid-cols-5 lg:gap-8">
         {Array.from({ length: 20 }).map((_, i) => (
           <SkeletonContainer key={i}>

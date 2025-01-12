@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 async function Movies() {
   const movies = await getPopularMovies()
   return (
-    <section className="container h-full py-20 lg:py-36">
+    <section className="container h-full py-20 lg:py-20">
       <MediaContent
         media={movies}
         getPopularMediaAction={getPopularMovies}
