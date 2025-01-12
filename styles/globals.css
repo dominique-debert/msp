@@ -59,6 +59,8 @@
   * {
     @apply border-border;
     font-family: 'Poppins', sans-serif !important;
+    font-weight: 400 !important;
+    color: white;
   }
   body {
     /* @apply bg-background text-foreground; */
