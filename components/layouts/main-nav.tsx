@@ -17,7 +17,7 @@ export function MainNav({ items }: MainNavProps) {
   return (
     <div className="hidden gap-6 md:gap-10 lg:flex">
       <Link href="/" className="flex items-baseline space-x-2">
-        <Icons.reelLogo className="h-7 w-7" />
+        <Icons.reelLogo className="size-7" />
         <span className="inline-block text-3xl font-bold text-secondary-foreground">
           {siteConfig.name}
         </span>
