@@ -27,9 +27,9 @@ export function SiteHeader() {
         <MobileNav items={siteConfig.mainNav} />
         <div className="flex flex-1 items-center justify-end space-x-4">
           <div className="w-full flex-1 md:w-auto md:flex-none">
-            {/* <CommandMenu /> */}
+            <CommandMenu />
           </div>
-          {/* <nav className="flex items-center space-x-1">
+          <nav className="flex items-center space-x-1">
             <Link
               href={siteConfig.links.github}
               target="_blank"
@@ -45,7 +45,7 @@ export function SiteHeader() {
                 <span className="sr-only">GitHub</span>
               </div>
             </Link>
-            <Link
+            {/* <Link
               href={siteConfig.links.twitter}
               target="_blank"
               rel="noreferrer"
@@ -74,8 +74,8 @@ export function SiteHeader() {
                 <Icons.buyMeACoffee className="size-5" />
                 <span className="sr-only">Buy me a coffee</span>
               </div>
-            </Link>
-          </nav> */}
+            </Link> */}
+          </nav>
         </div>
       </div>
     </header>
