@@ -29,18 +29,33 @@ export const HeroRatesInfos = ({
   )
 
   return (
-    <div className="my-4 flex flex-wrap items-center gap-2 lg:gap-3">
-      <Badge className="uppercase">{item?.original_language}</Badge>
-      <Badge className="uppercase">{item?.adult ? 'NC-17' : 'PG-13'}</Badge>
-      <div className="flex items-center text-xs lg:text-base">
-        <Icons.fullStar className="mr-1 h-6 w-6" />
-        <p className="font-semibold">{numberRounder(item?.vote_average)}</p>
+    <div
+      className="my-4 flex flex-wrap items-center gap-2 lg:gap-3"
+      data-oid="j_qj42x"
+    >
+      <Badge className="uppercase" data-oid="p_dm20m">
+        {item?.original_language}
+      </Badge>
+      <Badge className="uppercase" data-oid="hx_g:3k">
+        {item?.adult ? 'NC-17' : 'PG-13'}
+      </Badge>
+      <div
+        className="flex items-center text-xs lg:text-base"
+        data-oid="yehkiyu"
+      >
+        <Icons.fullStar className="mr-1 h-6 w-6" data-oid="gk_vwjz" />
+        <p className="font-semibold" data-oid="9:20fk:">
+          {numberRounder(item?.vote_average)}
+        </p>
       </div>
-      <p className="text-xs text-popover-foreground lg:text-base">
+      <p
+        className="text-xs text-popover-foreground lg:text-base"
+        data-oid="thg88xe"
+      >
         {dateFormatter(item?.release_date || item?.first_air_date)}
       </p>
       {movieGenres.map((genre) => (
-        <Badge key={genre.id} className="font-medium">
+        <Badge key={genre.id} className="font-medium" data-oid="zl2v7pd">
           {genre.name}
         </Badge>
       ))}

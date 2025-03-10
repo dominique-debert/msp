@@ -31,13 +31,17 @@ export function SeasonsSelector({
       onValueChange={setSelectedSeason}
       defaultValue={seasonQuerySTR || '1'}
       disabled={!formattedSeasons?.length}
+      data-oid="6thcb::"
     >
-      <SelectTrigger className="mb-4 w-full disabled:cursor-not-allowed lg:w-60">
-        <SelectValue placeholder="Select a season" />
+      <SelectTrigger
+        className="mb-4 w-full disabled:cursor-not-allowed lg:w-60"
+        data-oid="4o:4s2v"
+      >
+        <SelectValue placeholder="Select a season" data-oid="pnv_neb" />
       </SelectTrigger>
-      <SelectContent>
-        <SelectGroup>
-          <SelectLabel>Seasons</SelectLabel>
+      <SelectContent data-oid="sjhc96v">
+        <SelectGroup data-oid="7.a-ok_">
+          <SelectLabel data-oid="ziaztk_">Seasons</SelectLabel>
           {formattedSeasons?.map(
             (season, idx) =>
               season && (
@@ -45,12 +49,15 @@ export function SeasonsSelector({
                   <SelectItem
                     key={season?.id}
                     value={String(season?.season_number)}
+                    data-oid="jkcvl:z"
                   >
                     {season.name.startsWith('Season')
                       ? season.name
                       : `Season ${season?.season_number}`}
                   </SelectItem>
-                  {idx !== formattedSeasons?.length - 1 && <SelectSeparator />}
+                  {idx !== formattedSeasons?.length - 1 && (
+                    <SelectSeparator data-oid="_aqx2tn" />
+                  )}
                 </React.Fragment>
               )
           )}

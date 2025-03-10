@@ -29,9 +29,13 @@ export function BlurredImage({
         'blur-0': !isLoading,
       })}
       onLoad={() => setLoading(false)}
+      data-oid="b00-:hx"
     />
   ) : (
-    <div className="w-fit overflow-hidden rounded-lg bg-slate-900">
+    <div
+      className="w-fit overflow-hidden rounded-lg bg-slate-900"
+      data-oid="r_4i8c0"
+    >
       <Image
         {...props}
         alt={alt}
@@ -41,6 +45,7 @@ export function BlurredImage({
           'blur-0': !isLoading,
         })}
         onLoad={() => setLoading(false)}
+        data-oid="-2f1v-l"
       />
     </div>
   )

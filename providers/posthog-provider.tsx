@@ -12,5 +12,9 @@ if (typeof window !== 'undefined') {
   })
 }
 export function CSPostHogProvider({ children }: PropsWithChildren) {
-  return <PostHogProvider client={posthog}>{children}</PostHogProvider>
+  return (
+    <PostHogProvider client={posthog} data-oid="irwl-ez">
+      {children}
+    </PostHogProvider>
+  )
 }

@@ -18,34 +18,53 @@ export function MobileNav({ items }: MobileNavProps) {
   const pathname = usePathname()
 
   return (
-    <Sheet open={isOpen} onOpenChange={setIsOpen}>
-      <SheetTrigger asChild>
+    <Sheet open={isOpen} onOpenChange={setIsOpen} data-oid="zz-37ap">
+      <SheetTrigger asChild data-oid="49ohit3">
         <Button
           variant="ghost"
           className="mr-2 px-0 text-base hover:bg-transparent focus-visible:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0 lg:hidden"
+          data-oid="679ajjc"
         >
-          <Icons.menu className="size-6" />
-          <span className="sr-only">Toggle Menu</span>
+          <Icons.menu className="size-6" data-oid="g0ja_wr" />
+          <span className="sr-only" data-oid="4.jny38">
+            Toggle Menu
+          </span>
         </Button>
       </SheetTrigger>
       <SheetContent
         side="left"
         className="inset-y-0 flex h-auto w-[350px] flex-col p-0"
+        data-oid="c2946-f"
       >
-        <div className="px-7 py-4">
+        <div className="px-7 py-4" data-oid="51g1e_0">
           <Link
             aria-label="Home"
             href="/"
             className="flex w-fit items-center"
             onClick={() => setIsOpen(false)}
+            data-oid="qbbxw8-"
           >
-            <Icons.reelLogo className="mr-2 size-6" aria-hidden="true" />
-            <span className="text-lg font-bold">{siteConfig.name}</span>
+            <Icons.reelLogo
+              className="mr-2 size-6"
+              aria-hidden="true"
+              data-oid="rveufgr"
+            />
+
+            <span className="text-lg font-bold" data-oid="4bhlzx7">
+              {siteConfig.name}
+            </span>
           </Link>
         </div>
-        <div className="my-4 flex flex-1 flex-col gap-4 px-9 pb-2">
+        <div
+          className="my-4 flex flex-1 flex-col gap-4 px-9 pb-2"
+          data-oid="np.bvuu"
+        >
           {items?.map((item, index) => (
-            <div className="border-b-2 last:border-b-0" key={item.title}>
+            <div
+              className="border-b-2 last:border-b-0"
+              key={item.title}
+              data-oid="762pu-."
+            >
               <MobileLink
                 key={index}
                 href={item.href!}
@@ -53,13 +72,14 @@ export function MobileNav({ items }: MobileNavProps) {
                 setIsOpen={setIsOpen}
                 disabled={item.disabled}
                 scroll={item.scroll}
+                data-oid="lepy87m"
               >
                 {item.title}
               </MobileLink>
             </div>
           ))}
         </div>
-        <div className="space-y-6 px-9 pb-10">
+        <div className="space-y-6 px-9 pb-10" data-oid="8diedbi">
           <Link
             href={siteConfig.links.buyMeACoffee}
             target="_blank"
@@ -72,8 +92,9 @@ export function MobileNav({ items }: MobileNavProps) {
               }),
               'text-white'
             )}
+            data-oid="t6n:cl:"
           >
-            <Icons.buyMeACoffee className="mr-2 size-5" />
+            <Icons.buyMeACoffee className="mr-2 size-5" data-oid=".b1o:1-" />
             Buy me a coffee
           </Link>
           <Link
@@ -88,6 +109,7 @@ export function MobileNav({ items }: MobileNavProps) {
               }),
               'text-white'
             )}
+            data-oid="-vs1i1c"
           >
             Visit my portfolio
           </Link>
@@ -124,6 +146,7 @@ function MobileLink({
         disabled && 'pointer-events-none opacity-60'
       )}
       onClick={() => setIsOpen(false)}
+      data-oid="99wbo1:"
     >
       {children}
     </Link>

@@ -72,14 +72,19 @@ export const Episodes = ({
   }
 
   return (
-    <section className="p-4">
+    <section className="p-4" data-oid="275jh.9">
       {!episodes?.length && isEpisodesLoading && (
-        <div className="flex items-center justify-center">
-          <Loader className="mr-2 size-6 shrink-0 animate-spin opacity-80" />
+        <div className="flex items-center justify-center" data-oid="pnn:y1x">
+          <Loader
+            className="mr-2 size-6 shrink-0 animate-spin opacity-80"
+            data-oid="-vgaygm"
+          />
         </div>
       )}
       {!episodes?.length && !isEpisodesLoading && (
-        <p className="text-center text-sm">No episodes found</p>
+        <p className="text-center text-sm" data-oid="voalhw2">
+          No episodes found
+        </p>
       )}
       {episodes?.length
         ? episodes.map((episode, idx) => (
@@ -97,10 +102,13 @@ export const Episodes = ({
                 onClick={() => {
                   handleWatchEpisode(episode)
                 }}
+                data-oid="0y26oec"
               >
                 {episode.episode_number}. {episode.name}
               </p>
-              {idx !== episodes?.length - 1 && <Separator className="my-3" />}
+              {idx !== episodes?.length - 1 && (
+                <Separator className="my-3" data-oid="nwhspo-" />
+              )}
             </React.Fragment>
           ))
         : null}

@@ -20,11 +20,20 @@ export const DetailsHero = forwardRef<
   const title = media?.title || media?.name
 
   return (
-    <section className="relative isolate h-[500px] overflow-hidden lg:h-[80dvh]">
-      <HeroImage movie={media} />
-      <div className="container relative z-50 h-full max-w-screen-2xl">
-        <div className="flex h-full items-center justify-center">
-          <AnimatePresence>
+    <section
+      className="relative isolate h-[500px] overflow-hidden lg:h-[80dvh]"
+      data-oid="rktltlp"
+    >
+      <HeroImage movie={media} data-oid="adebx:_" />
+      <div
+        className="container relative z-50 h-full max-w-screen-2xl"
+        data-oid="jum_bcr"
+      >
+        <div
+          className="flex h-full items-center justify-center"
+          data-oid="_cpqcbn"
+        >
+          <AnimatePresence data-oid="yikgk88">
             {!isIframeShown && (
               <motion.div
                 transition={{ type: 'spring', stiffness: 500 }}
@@ -34,8 +43,13 @@ export const DetailsHero = forwardRef<
                 className={cn({
                   hidden: isIframeShown,
                 })}
+                data-oid="s3f1y:i"
               >
-                <PlayButton onClick={playVideo} media={media} />
+                <PlayButton
+                  onClick={playVideo}
+                  media={media}
+                  data-oid="se:6if-"
+                />
               </motion.div>
             )}
           </AnimatePresence>
@@ -54,10 +68,14 @@ export const DetailsHero = forwardRef<
             about={media?.overview}
             key={media?.id}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            data-oid="s_l_vlo"
           ></iframe>
         </div>
       </div>
-      <div className="pointer-events-none absolute -inset-4 rounded-md bg-slate-900/50 shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:drop-shadow-lg" />
+      <div
+        className="pointer-events-none absolute -inset-4 rounded-md bg-slate-900/50 shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:drop-shadow-lg"
+        data-oid="u:-1_ac"
+      />
     </section>
   )
 })

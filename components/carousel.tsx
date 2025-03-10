@@ -23,6 +23,7 @@ export function Carousel({ children }: { children: React.ReactNode }) {
       animateTransitions={true}
       threshold={1}
       autoPlay={true}
+      data-oid="0xcusle"
     >
       {children}
     </AutoPlaySwipeableViews>

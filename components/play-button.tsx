@@ -22,10 +22,14 @@ export function PlayButton({ onClick, media }: PlayButtonProps) {
   }
 
   return (
-    <div className="rounded-full bg-gradient-to-br from-purple-600 to-blue-500 text-center font-medium text-white transition-colors duration-500 hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500">
+    <div
+      className="rounded-full bg-gradient-to-br from-purple-600 to-blue-500 text-center font-medium text-white transition-colors duration-500 hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500"
+      data-oid="24moecs"
+    >
       <Icons.playIcon
         onClick={handleClick}
         className={cn('size-24 cursor-pointer')}
+        data-oid="kut-aed"
       />
     </div>
   )

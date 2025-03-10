@@ -41,6 +41,7 @@ export const SeriesDetailsHero = ({ series }: { series: SeriesDetails }) => {
       isIframeShown={isIframeShown}
       playVideo={playDefaultSeries}
       ref={iframeRef}
+      data-oid="6jw50bt"
     />
   )
 }

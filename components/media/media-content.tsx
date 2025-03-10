@@ -36,11 +36,20 @@ export const MediaContent = ({
     }
   }, [inView, fetchNextPage])
 
-  if (!data) return <div className="text-muted-foreground">No data found</div>
+  if (!data)
+    return (
+      <div className="text-muted-foreground" data-oid="wusa30:">
+        No data found
+      </div>
+    )
+
   const { pages } = data
 
   return (
-    <div className="grid grid-cols-2 gap-4 lg:grid-cols-5 lg:gap-8">
+    <div
+      className="grid grid-cols-2 gap-4 lg:grid-cols-5 lg:gap-8"
+      data-oid="y22rd18"
+    >
       {pages &&
         pages.map((page, index) => (
           <React.Fragment key={index}>
@@ -51,11 +60,12 @@ export const MediaContent = ({
                   item={movie as MediaType}
                   isTruncateOverview={false}
                   itemType={queryKey === QUERY_KEYS.MOVIES_KEY ? 'movie' : 'tv'}
+                  data-oid="i4jrvg9"
                 />
               ))}
           </React.Fragment>
         ))}
-      <div ref={myRef} />
+      <div ref={myRef} data-oid="7f1-fy9" />
     </div>
   )
 }

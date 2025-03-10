@@ -84,24 +84,31 @@ interface RootLayoutProps {
 export default function RootLayout({ children, modal }: RootLayoutProps) {
   return (
     <>
-      <html lang="en" suppressHydrationWarning>
-        <head />
+      <html lang="en" suppressHydrationWarning data-oid="pds09--">
+        <head data-oid="pk-t:ux" />
         <body
           className={cn(
             'min-h-screen scroll-smooth bg-background font-sans antialiased',
             fontSans.variable
           )}
+          data-oid="jwjqvzh"
         >
-          <div className="flex flex-col">
-            <SiteHeader />
-            <div className="h-full flex-1 overflow-x-hidden">
-              <QueryProvider>
-                <CSPostHogProvider>{children}</CSPostHogProvider>
+          <div className="flex flex-col" data-oid="2nsss6y">
+            <SiteHeader data-oid="1utz.f." />
+            <div className="h-full flex-1 overflow-x-hidden" data-oid="6nke40d">
+              <QueryProvider data-oid="tfei56b">
+                <CSPostHogProvider data-oid="1i:e3qb">
+                  {children}
+                </CSPostHogProvider>
               </QueryProvider>
-              <ToastProvider />
-              <Analytics mode="production" />
-              <Footer />
-              <GoogleTagManager gtmId={GOOGLE_GTM_ID as string} />
+              <ToastProvider data-oid="wrt9.26" />
+              <Analytics mode="production" data-oid="5y9ifby" />
+              <Footer data-oid="59-wmn-" />
+              <GoogleTagManager
+                gtmId={GOOGLE_GTM_ID as string}
+                data-oid="m1f02if"
+              />
+
               {/* <GoogleAnalytics gaId={GOOGLE_MEASUREMENT_ID as string} /> */}
               {modal && modal}
             </div>

@@ -25,6 +25,7 @@ export const HeroImage = ({ movie }: HeroImageProps) => {
           sizes="(min-width: 1024px) 1024px, 100vw , (max-width: 768px) 768px, 100vw, (max-width: 640px) 640px, 100vw"
           intro
           priority
+          data-oid="peq4qdm"
         />
       )}
       {media?.poster_path && (
@@ -36,6 +37,7 @@ export const HeroImage = ({ movie }: HeroImageProps) => {
           sizes="(min-width: 1024px) 1024px, 100vw"
           intro
           priority
+          data-oid="el1u0ee"
         />
       )}
     </>

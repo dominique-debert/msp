@@ -26,39 +26,51 @@ interface ListProps {
 
 export const List = ({ title, items, itemType = 'movie' }: ListProps) => {
   return (
-    <nav className="pb-10 pt-12 lg:pb-28">
+    <nav className="pb-10 pt-12 lg:pb-28" data-oid="3hmooy_">
       <motion.div
         initial="rest"
         whileHover="hover"
         animate="rest"
         className="w-fit"
+        data-oid="_ax:zhd"
       >
         <Link
           href={itemRedirect(itemType)}
           className="mb-4 flex w-fit items-center gap-2"
+          data-oid="hjtxdse"
         >
           <motion.h2
             className="text-2xl font-bold transition"
             variants={CHANGE_COLOR_VARIANT}
+            data-oid="-uj821k"
           >
             {title}
           </motion.h2>
           <motion.div
             className="mt-1 text-base text-cyan-200"
             variants={HIDDEN_TEXT_VARIANT}
+            data-oid="7npzyb6"
           >
-            <span className="font-sans text-sm font-medium">Explore All</span>
+            <span className="font-sans text-sm font-medium" data-oid="x8dazew">
+              Explore All
+            </span>
           </motion.div>
           <motion.span
             variants={HIDDEN_TEXT_ARROW_VARIANT}
             className="mt-1 text-base text-cyan-200"
+            data-oid="5c:qzbr"
           >
-            <Icons.arrowRight className="ml-1 inline-block size-4" />
+            <Icons.arrowRight
+              className="ml-1 inline-block size-4"
+              data-oid="zdftogp"
+            />
           </motion.span>
         </Link>
       </motion.div>
       {items.length === 0 && (
-        <p className="text-lg text-gray-400">No items to show</p>
+        <p className="text-lg text-gray-400" data-oid="chue-sz">
+          No items to show
+        </p>
       )}
       {items.length > 0 && (
         <Splide
@@ -69,10 +81,11 @@ export const List = ({ title, items, itemType = 'movie' }: ListProps) => {
             pagination: false,
             autoWidth: true,
           }}
+          data-oid="m9.0sws"
         >
           {items.map((item) => (
-            <SplideSlide key={item.id}>
-              <Card item={item} itemType={itemType} />
+            <SplideSlide key={item.id} data-oid="mk5kn-q">
+              <Card item={item} itemType={itemType} data-oid="5lz0_:b" />
             </SplideSlide>
           ))}
         </Splide>

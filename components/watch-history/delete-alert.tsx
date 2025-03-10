@@ -27,26 +27,29 @@ export function DeleteHistoryAlert({ onDelete }: DeleteHistoryAlertProps) {
   }
 
   return (
-    <AlertDialog open={isOpen} onOpenChange={setIsOpen}>
-      <AlertDialogTrigger asChild>
-        <Button variant="outline">
-          <Trash className="mr-2 size-4" />
+    <AlertDialog open={isOpen} onOpenChange={setIsOpen} data-oid="ym:6f0o">
+      <AlertDialogTrigger asChild data-oid="bdm9x7r">
+        <Button variant="outline" data-oid="5_yq9up">
+          <Trash className="mr-2 size-4" data-oid="qkh7p7b" />
           Clear history
         </Button>
       </AlertDialogTrigger>
-      <AlertDialogContent>
-        <AlertDialogHeader>
-          <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
-          <AlertDialogDescription>
+      <AlertDialogContent data-oid="gdb435p">
+        <AlertDialogHeader data-oid="4izlt26">
+          <AlertDialogTitle data-oid="yu4hwwo">
+            Are you absolutely sure?
+          </AlertDialogTitle>
+          <AlertDialogDescription data-oid="1g-idvn">
             This action cannot be undone. This will permanently delete your
             entire watch history.
           </AlertDialogDescription>
         </AlertDialogHeader>
-        <AlertDialogFooter>
-          <AlertDialogCancel>Cancel</AlertDialogCancel>
+        <AlertDialogFooter data-oid="tzkxdac">
+          <AlertDialogCancel data-oid="6p-hkn9">Cancel</AlertDialogCancel>
           <AlertDialogAction
             onClick={deleteWatchedItems}
             className="text-white"
+            data-oid="7qu8f_5"
           >
             Yes, clear history
           </AlertDialogAction>

@@ -4,5 +4,5 @@ import React from 'react'
 import { Toaster as RadToaster } from 'sonner'
 
 export const ToastProvider = () => {
-  return <RadToaster position="bottom-right" />
+  return <RadToaster position="bottom-right" data-oid="wmruimv" />
 }

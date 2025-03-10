@@ -20,6 +20,7 @@ export const AnimatedWatchButton = ({ movieId }: AnimatedWatchButtonProps) => {
       transition={{ type: 'spring', stiffness: 500 }}
       initial={{ opacity: 0, y: 80 }}
       animate={{ opacity: 1, y: 0 }}
+      data-oid="h0bev_7"
     >
       <Link
         href={`/movies/${movieId}`}
@@ -31,8 +32,9 @@ export const AnimatedWatchButton = ({ movieId }: AnimatedWatchButtonProps) => {
             className: 'rounded-full',
           })
         )}
+        data-oid="jjz9n7."
       >
-        <Icons.watch className="mr-2" />
+        <Icons.watch className="mr-2" data-oid="agwd4j8" />
         Watch Now
       </Link>
     </motion.div>

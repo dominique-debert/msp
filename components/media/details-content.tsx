@@ -25,10 +25,13 @@ export const MoviesDetailsContent = ({
     (crew) => crew.job === 'Director'
   )?.name
   return (
-    <section className="container max-w-screen-2xl pb-10 pt-12 lg:pb-20">
-      <div className="flex flex-col gap-8 lg:flex-row">
-        <div className="hidden lg:block">
-          <div className="relative min-h-[600px] w-[400px]">
+    <section
+      className="container max-w-screen-2xl pb-10 pt-12 lg:pb-20"
+      data-oid="pz2n5en"
+    >
+      <div className="flex flex-col gap-8 lg:flex-row" data-oid="z-5p9te">
+        <div className="hidden lg:block" data-oid="l1:-yzx">
+          <div className="relative min-h-[600px] w-[400px]" data-oid="l__cw24">
             <BlurredImage
               src={getPosterImageURL(movie.poster_path)}
               alt={movie.title}
@@ -36,19 +39,35 @@ export const MoviesDetailsContent = ({
               fill
               sizes="(min-width: 1024px) 1024px, 100vw"
               intro
+              data-oid="zqnl6_9"
             />
           </div>
         </div>
-        <section className="flex flex-col gap-4">
-          <DetailsExtraInfo movie={movie} director={director} />
-          <DetailsCredits movieCredits={movieCredits} />
+        <section className="flex flex-col gap-4" data-oid="qvk0shj">
+          <DetailsExtraInfo
+            movie={movie}
+            director={director}
+            data-oid="_dfe7aw"
+          />
+
+          <DetailsCredits movieCredits={movieCredits} data-oid="8pj89hl" />
         </section>
       </div>
-      <Suspense fallback={<SliderHorizontalListLoader />}>
-        <List title="Recommended Movies" items={recommendedMovies} />
+      <Suspense
+        fallback={<SliderHorizontalListLoader data-oid="w0_yduq" />}
+        data-oid="13hlvzm"
+      >
+        <List
+          title="Recommended Movies"
+          items={recommendedMovies}
+          data-oid="1e4czba"
+        />
       </Suspense>
-      <Suspense fallback={<SliderHorizontalListLoader />}>
-        <List title="Similar Movies" items={similarMovies} />
+      <Suspense
+        fallback={<SliderHorizontalListLoader data-oid="jnqmx.d" />}
+        data-oid="c6ea7pc"
+      >
+        <List title="Similar Movies" items={similarMovies} data-oid="j1k83w1" />
       </Suspense>
     </section>
   )

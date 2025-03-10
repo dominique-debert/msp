@@ -18,11 +18,12 @@ export const metadata: Metadata = {
 async function Movies() {
   const movies = await getPopularMovies()
   return (
-    <section className="container h-full py-20 lg:py-20">
+    <section className="container h-full py-20 lg:py-20" data-oid="as84hyc">
       <MediaContent
         media={movies}
         getPopularMediaAction={getPopularMovies}
         queryKey={QUERY_KEYS.MOVIES_KEY}
+        data-oid="qccky-i"
       />
     </section>
   )

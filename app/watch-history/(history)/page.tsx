@@ -15,8 +15,8 @@ export const metadata: Metadata = {
 
 function WatchHistory() {
   return (
-    <section className="container h-full py-20 lg:py-20">
-      <WatchHistoryContainer />
+    <section className="container h-full py-20 lg:py-20" data-oid="g:dz6je">
+      <WatchHistoryContainer data-oid="-025pny" />
     </section>
   )
 }

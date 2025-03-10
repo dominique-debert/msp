@@ -40,13 +40,14 @@ const MoviePage = async ({ params }: PageDetailsProps) => {
     await populateMovieDetailsPage(params?.id)
 
   return (
-    <header className="relative">
-      <MovieDetailsHero movie={movieDetails} />
+    <header className="relative" data-oid="3rn5en-">
+      <MovieDetailsHero movie={movieDetails} data-oid="76ffkqm" />
       <MoviesDetailsContent
         movie={movieDetails}
         movieCredits={movieCredits}
         similarMovies={similarMovies}
         recommendedMovies={recommendedMovies}
+        data-oid="-o2m5s:"
       />
     </header>
   )

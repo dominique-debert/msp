@@ -40,13 +40,14 @@ const TVSeries = async ({ params }: PageDetailsProps) => {
     await populateSeriesDetailsPageData(params?.id)
 
   return (
-    <header className="relative">
-      <SeriesDetailsHero series={seriesDetails} />
+    <header className="relative" data-oid="j6xu.._">
+      <SeriesDetailsHero series={seriesDetails} data-oid="vfjgm_l" />
       <SeriesDetailsContent
         series={seriesDetails}
         seriesCredits={seriesCredits}
         similarSeries={similarSeries}
         recommendedSeries={recommendedSeries}
+        data-oid="cm.c_8v"
       />
     </header>
   )

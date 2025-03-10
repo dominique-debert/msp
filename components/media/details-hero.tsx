@@ -22,6 +22,7 @@ export const MovieDetailsHero = ({ movie }: { movie: MovieDetails }) => {
       isIframeShown={isIframeShown}
       playVideo={playVideo}
       ref={iframeRef}
+      data-oid="cn:hk1j"
     />
   )
 }

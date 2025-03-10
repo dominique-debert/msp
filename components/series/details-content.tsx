@@ -28,10 +28,16 @@ export const SeriesDetailsContent = ({
     (crew) => crew.job === 'Director'
   )?.name
   return (
-    <section className="container max-w-screen-2xl pb-10 pt-12 lg:pb-20">
-      <div className="flex flex-col-reverse gap-8 lg:flex-row">
-        <div className="hidden lg:block">
-          <div className="relative min-h-[600px] w-[400px]">
+    <section
+      className="container max-w-screen-2xl pb-10 pt-12 lg:pb-20"
+      data-oid="_b.9sdg"
+    >
+      <div
+        className="flex flex-col-reverse gap-8 lg:flex-row"
+        data-oid="104l11i"
+      >
+        <div className="hidden lg:block" data-oid="zswxmik">
+          <div className="relative min-h-[600px] w-[400px]" data-oid="73sf1rj">
             <BlurredImage
               src={getPosterImageURL(series.poster_path)}
               alt={series.name}
@@ -39,24 +45,42 @@ export const SeriesDetailsContent = ({
               fill
               sizes="(min-width: 1024px) 1024px, 100vw"
               intro
+              data-oid="87bqbsy"
             />
           </div>
         </div>
-        <section className="flex flex-1 flex-col gap-4">
-          <SeriesDetailsExtraInfo series={series} director={director} />
-          <DetailsCredits movieCredits={seriesCredits} />
+        <section className="flex flex-1 flex-col gap-4" data-oid="2amrqx4">
+          <SeriesDetailsExtraInfo
+            series={series}
+            director={director}
+            data-oid="k9or94:"
+          />
+
+          <DetailsCredits movieCredits={seriesCredits} data-oid="nsvi:iy" />
         </section>
-        <SeasonNavigator series={series} />
+        <SeasonNavigator series={series} data-oid="ug3n847" />
       </div>
-      <Suspense fallback={<SliderHorizontalListLoader />}>
+      <Suspense
+        fallback={<SliderHorizontalListLoader data-oid="b5rnrwv" />}
+        data-oid="9g4kb_3"
+      >
         <List
           title="Recommended Series"
           items={recommendedSeries}
           itemType="tv"
+          data-oid="gzdv77e"
         />
       </Suspense>
-      <Suspense fallback={<SliderHorizontalListLoader />}>
-        <List title="Similar Series" items={similarSeries} itemType="tv" />
+      <Suspense
+        fallback={<SliderHorizontalListLoader data-oid="f-2m574" />}
+        data-oid="dz.9i8l"
+      >
+        <List
+          title="Similar Series"
+          items={similarSeries}
+          itemType="tv"
+          data-oid="3oldj:_"
+        />
       </Suspense>
     </section>
   )
